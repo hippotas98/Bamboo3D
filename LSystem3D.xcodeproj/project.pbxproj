@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		18086DA92164C8AD000BE9E4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18086DA82164C8AD000BE9E4 /* main.cpp */; };
+		18086DB12164C8BA000BE9E4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18086DB02164C8BA000BE9E4 /* OpenGL.framework */; };
+		18086DB32164C8BF000BE9E4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18086DB22164C8BF000BE9E4 /* GLUT.framework */; };
+		185AF5B92164CAFF00037D3D /* main.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AF5AF2164CAFE00037D3D /* main.o */; };
+		185AF5BA2164CAFF00037D3D /* Color.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AF5B22164CAFF00037D3D /* Color.o */; };
+		185AF5BB2164CAFF00037D3D /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185AF5B42164CAFF00037D3D /* Color.cpp */; };
+		185AF5BC2164CAFF00037D3D /* LSys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185AF5B52164CAFF00037D3D /* LSys.cpp */; };
+		185AF5BD2164CAFF00037D3D /* LSys.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AF5B62164CAFF00037D3D /* LSys.o */; };
+		185AF5BE2164CAFF00037D3D /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185AF5B72164CAFF00037D3D /* Point.cpp */; };
+		185AF5BF2164CAFF00037D3D /* Point.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AF5B82164CAFF00037D3D /* Point.o */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,18 @@
 /* Begin PBXFileReference section */
 		18086DA52164C8AD000BE9E4 /* LSystem3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LSystem3D; sourceTree = BUILT_PRODUCTS_DIR; };
 		18086DA82164C8AD000BE9E4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		18086DB02164C8BA000BE9E4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		18086DB22164C8BF000BE9E4 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		185AF5AF2164CAFE00037D3D /* main.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = main.o; sourceTree = "<group>"; };
+		185AF5B02164CAFF00037D3D /* LSys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSys.h; sourceTree = "<group>"; };
+		185AF5B12164CAFF00037D3D /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		185AF5B22164CAFF00037D3D /* Color.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Color.o; sourceTree = "<group>"; };
+		185AF5B32164CAFF00037D3D /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		185AF5B42164CAFF00037D3D /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
+		185AF5B52164CAFF00037D3D /* LSys.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSys.cpp; sourceTree = "<group>"; };
+		185AF5B62164CAFF00037D3D /* LSys.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = LSys.o; sourceTree = "<group>"; };
+		185AF5B72164CAFF00037D3D /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		185AF5B82164CAFF00037D3D /* Point.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = Point.o; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185AF5BF2164CAFF00037D3D /* Point.o in Frameworks */,
+				185AF5BD2164CAFF00037D3D /* LSys.o in Frameworks */,
+				18086DB32164C8BF000BE9E4 /* GLUT.framework in Frameworks */,
+				18086DB12164C8BA000BE9E4 /* OpenGL.framework in Frameworks */,
+				185AF5B92164CAFF00037D3D /* main.o in Frameworks */,
+				185AF5BA2164CAFF00037D3D /* Color.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +70,7 @@
 			children = (
 				18086DA72164C8AD000BE9E4 /* LSystem3D */,
 				18086DA62164C8AD000BE9E4 /* Products */,
+				18086DAF2164C8BA000BE9E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +86,27 @@
 			isa = PBXGroup;
 			children = (
 				18086DA82164C8AD000BE9E4 /* main.cpp */,
+				185AF5B42164CAFF00037D3D /* Color.cpp */,
+				185AF5B32164CAFF00037D3D /* Color.h */,
+				185AF5B22164CAFF00037D3D /* Color.o */,
+				185AF5B52164CAFF00037D3D /* LSys.cpp */,
+				185AF5B02164CAFF00037D3D /* LSys.h */,
+				185AF5B62164CAFF00037D3D /* LSys.o */,
+				185AF5AF2164CAFE00037D3D /* main.o */,
+				185AF5B72164CAFF00037D3D /* Point.cpp */,
+				185AF5B12164CAFF00037D3D /* Point.h */,
+				185AF5B82164CAFF00037D3D /* Point.o */,
 			);
 			path = LSystem3D;
+			sourceTree = "<group>";
+		};
+		18086DAF2164C8BA000BE9E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18086DB22164C8BF000BE9E4 /* GLUT.framework */,
+				18086DB02164C8BA000BE9E4 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185AF5BE2164CAFF00037D3D /* Point.cpp in Sources */,
+				185AF5BC2164CAFF00037D3D /* LSys.cpp in Sources */,
 				18086DA92164C8AD000BE9E4 /* main.cpp in Sources */,
+				185AF5BB2164CAFF00037D3D /* Color.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
